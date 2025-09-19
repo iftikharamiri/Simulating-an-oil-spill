@@ -1,0 +1,20 @@
+# Example configuration file
+
+[settings]
+nSteps = 200   # number of time steps
+tStart = 0.0      # start time
+tEnd   = 0.5     # end time
+
+[geometry]
+meshName = "src/Simulation/data/bay.msh"
+borders = [
+  [0.0, 0.45],    # x1, y1
+  [0.0, 0.2]      # x2, y2
+]                 # define where fish are located
+
+
+
+[IO]
+logName         = "file1"               # name of the log file created
+writeFrequency  = 10
+restartFile     = 0   # Restart file must be provided if start time is provided.

@@ -1,0 +1,20 @@
+# Example configuration file
+
+[not_settings]
+ikke_nSteps = 500      # number of time steps
+tStart = 0.1      # start time
+tEnd   = 0.2      # end time
+
+[geometry]
+meshName = "src/Simulation/data/bay.msh"
+borders = [
+  [0.0, 0.45],    # x1, y1
+  [0.0, 0.2]      # x2, y2
+]                 # define where fish are located
+
+
+
+[IO]
+logName         = "log"                  # name of the log file created
+writeFrequency  = 10                     # Frequency of output video. If not provided, no video is recorded.
+restartFile     = "input/solution.txt"   # Restart file must be provided if start time is provided.
